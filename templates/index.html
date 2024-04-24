@@ -1,0 +1,24 @@
+<div class="card-body">
+    <body style="background-color: olivedrab">
+    <h4>Book List</h4>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Nomi</th><th>|</th>
+            <th scope="col">Narxi</th><th>|</th>
+            <th scope="col">Mualiffi</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for book in books %}
+            <tr>
+            <td>{{ book.name }}</td><th>|</th>
+            <td>{{ book.price }}</td><th>|</th>
+            <td>{{ book.author }}</td>
+        </tr>
+
+        {% endfor %}
+        </tbody>
+    </table>
+    </body>
+</div>
